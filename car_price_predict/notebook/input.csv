@@ -1,0 +1,7 @@
+Company,Location,Year,Kilometers_Driven,Fuel_Type,Transmission,Owner_Type,Mileage,Engine,Power,Seats,New_Price
+Maruti ,Mumbai,2010,72000,CNG,Manual,First,26.6,1000,56.66,5,
+Honda,Pune,2015,41000,Diesel,Manual,First,27.6,1001,57.66,5,
+Maruti ,Chennai,2011,46000,Petrol,Manual,First,28.6,1002,58.66,5,8.61
+Honda,Chennai,2012,87000,Diesel,Manual,First,29.6,1003,59.66,7,
+Maruti ,Coimbatore,2013,40670,Diesel,Automatic,Second,30.6,1004,60.66,5,
+Honda,Hyderabad,2012,75000,LPG,Manual,First,31.6,1005,61.66,5,
