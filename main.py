@@ -34,7 +34,7 @@ def main():
     if 'page' not in st.session_state:
         st.session_state.page = 0
     placeholder = st.empty()
-    st.sidebar.header("Some projects deta:")
+    st.sidebar.header("Some projects detail:")
     proj_1 = st.sidebar.button("Used Cars Price Prediction [ML]", use_container_width=True)
 
     proj_2 = st.sidebar.button("Covid-19 Visualization [DA]", use_container_width=True)
