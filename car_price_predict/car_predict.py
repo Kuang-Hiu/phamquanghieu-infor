@@ -105,9 +105,9 @@ def processing_data(df):
     return X_final_scaled
 
 def car_price(X):
-    model = pickle.load(open("car_price_predict/pkl/rf_reg.pkl", 'rb'))
+    model = pickle.load(open("pkl/rf_reg.pkl", 'rb'))
     results_scaled = model.predict(X)
-    sc = load('car_price_predict/pkl/y_std_scaler.bin')
+    sc = load('./pkl/y_std_scaler.bin')
     results = sc.inverse_transform([results_scaled])
     return results[0][[0]]
 
