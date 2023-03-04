@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import date
 #from sklearn.cluster import KMeans
 import pickle
+import gzip
 #from sklearn.preprocessing import StandardScaler
 #from sklearn.decomposition import PCA
 from joblib import load
@@ -105,9 +106,10 @@ def processing_data(df):
     return X_final_scaled
 
 def car_price(X):
-    model = pickle.load(open("./pkl/rf_reg.pkl", 'rb'))
+    with gzip.open(open("car_price_predict/pkl/rf_reg.pkl.gz", 'rb')) as f:
+        model = pickle.load(f)
     results_scaled = model.predict(X)
-    sc = load('./pkl/y_std_scaler.bin')
+    sc = load('car_price_predict/pkl/y_std_scaler.bin')
     results = sc.inverse_transform([results_scaled])
     return results[0][[0]]
 
