@@ -189,7 +189,7 @@ def display_project1(placeholder):
         with col3:
             kilometers_driven = st.text_input("Kilometers Driven")
             owner_type = st.selectbox("Owner type",
-                                        ['First', 'Second',"Third","Above Third"])
+                                        ['First', 'Second',"Third"])
     
         with col4:
             fuel_type = st.selectbox("Fuel Type:",
